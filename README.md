@@ -23,4 +23,11 @@ ifaaaaz
 7. Generate SHA256 hashes in `hashes.txt` to verify integrity.
 
 ## Key Filters
-- `http.request.method == "POST"`
+- `http.request.method == "POST"`  
+- `arp`  
+- `arp.opcode == 2`  
+
+## Verify
+```bash
+sha256sum -c --quiet hashes.txt && echo "All files OK" || echo "Integrity issue"
+
