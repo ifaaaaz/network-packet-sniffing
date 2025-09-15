@@ -28,6 +28,6 @@ ifaaaaz
 - `arp.opcode == 2`  
 
 ## Verify
-```bash
+\`\`\`bash
 sha256sum -c --quiet hashes.txt && echo "All files OK" || echo "Integrity issue"
-
+\`\`\`

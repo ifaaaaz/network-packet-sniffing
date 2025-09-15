@@ -1,4 +1,3 @@
-cat << 'EOF' > commands.txt
 # Commands used for Task 3
 
 # Show files and hashes
@@ -9,5 +8,3 @@ sha256sum -c --quiet hashes.txt && echo "All files OK" || echo "Integrity issue"
 
 # Optional: extract POST bodies using tshark
 tshark -r task3_capture.pcapng -Y 'http.request.method == "POST"' -T fields -e frame.number -e frame.time -e ip.src -e ip.dst -e http.host -e http.request.uri -e http.file_data
-EOF
-
