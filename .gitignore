@@ -1,0 +1,8 @@
+# Python virtual environment
+task3-venv/
+*.pyc
+__pycache__/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
