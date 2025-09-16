@@ -1,4 +1,4 @@
-# Task 3 — Network Packet Sniffing and Analysis
+# Network Packet Sniffing and Analysis
 
 ## Author
 ifaaaaz
