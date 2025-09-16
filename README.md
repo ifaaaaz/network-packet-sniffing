@@ -1,17 +1,16 @@
 # Network Packet Sniffing and Analysis
 
-## Author
-ifaaaaz
+**Author:** ifaaaaz
 
 ## Files
-- `task3_capture.pcapng`  
-- `suspicious_http3.pcapng`  
-- `hashes.txt`  
-- `commands.txt`  
-- `network_packet_analysis_report_sample.pdf`  
-- `fig1_post_packet_list.png`  
-- `fig2_arp_opcode2.png`  
-- (optional) `fig3_follow_http_stream.png`
+- task3_capture.pcapng
+- suspicious_http3.pcapng
+- hashes.txt
+- commands.txt
+- network_packet_analysis_report_sample.pdf
+- fig1_post_packet_list.png
+- fig2_arp_opcode2.png
+- (optional) fig3_follow_http_stream.png
 
 ## How I captured
 1. Open Wireshark and select the network interface.  
@@ -23,11 +22,10 @@ ifaaaaz
 7. Generate SHA256 hashes in `hashes.txt` to verify integrity.
 
 ## Key Filters
-- `http.request.method == "POST"`  
-- `arp`  
-- `arp.opcode == 2`  
+- `http.request.method == "POST"`
+- `arp`
+- `arp.opcode == 2`
 
 ## Verify
-\`\`\`bash
+```bash
 sha256sum -c --quiet hashes.txt && echo "All files OK" || echo "Integrity issue"
-\`\`\`
